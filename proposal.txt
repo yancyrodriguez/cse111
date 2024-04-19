@@ -1,0 +1,46 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program? Time Zones
+
+2. What real-world problem will your program address or help to solve? A user who wants to know specific time zones from a list.
+
+3. What will you learn from developing this program? I will learn how to creat a program using time zone
+
+4. What Python modules will your program use? datetime
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. List the names of functions you will need?
+
+from datetime import datetime
+from zoneinfo import ZoneInfo
+hora_utc = datetime.now(ZoneInfo("UTC"))
+hora_ny = hora_utc.astimezone(ZoneInfo("America/New_York"))
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. List the names of the test functions you will write.
+
+test_convert_utc_to_est
+test_convert_utc_to_local_timezone
+test_convert_with_invalid_timezone_raises_error
+

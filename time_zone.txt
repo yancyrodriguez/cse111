@@ -1,0 +1,10 @@
+America/New_York
+Europe/London
+Asia/Tokyo
+Australia/Sydney
+Europe/Moscow
+America/Mexico_City
+Asia/Dubai
+Africa/Cairo
+Europe/Paris
+America/Argentina/Buenos_Aires
